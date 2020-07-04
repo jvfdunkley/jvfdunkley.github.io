@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Chewy&display=swap');
+
+:root {
+  --gradient: linear-gradient(to left, #F073A1, #19EEF6);
+  --text-color: #EBFFF8;
+  --black: #0A0A0A;
+}
+
+
+html{
+/* If we do any padding, it won't affect the width of the element*/
+box-sizing: border-box;
+font-family: 'ABeeZee', sans-serif;
+}
+
+/* GENERAL ALIGNMENT */
+body{
+     background: var(--black);
+     margin: 0 1.875rem;
+     line-height: 1.4;
+     color: var(--text-color);
+}
+
+h2, h3 {
+margin: 0;
+padding:0;
+text-align: center;
+}
+
+p{
+padding: 0;
+font-size: 18px;
+margin: auto;
+}
+
+a{
+text-decoration: none;
+font-size: 1.125rem;
+color: var(--text-color);
+}
+
+/* INTRO */
+#intro {
+text-align: center;
+}
+#intro h2 {
+padding-bottom: 1rem;
+}
+
+#title
+{
+    /*color: var(--gradient);*/
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createbeatbutton
+{
+    padding: 0.625rem;
+    border: 0.3125rem solid;
+    border-image-slice: 1;
+    border-image-source:var(--gradient);
+}
+
+/* SOUND BOXES */
+#boxes{
+display: grid;
+grid-gap: 5rem;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+margin: 0 5rem;
+margin-top: 3.125rem;
+}
+
+
+.box {
+    background: var(--black);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: #000;
+    border: 0.3125rem solid var(--text-color);
+}
+
+.box:hover {
+    border: 0.0625rem solid white;
+    border-image-slice: 1;
+    border-width: 0.3125rem;
+    border-image-source:var(--gradient);
+
+    /* MIGHT ADD GRADIENT ANIMATION AS A EXTRA THING LATER
+    animation-name: movingGradient;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;*/
+}
+@media(max-width: 1230px)
+{
+
+    nav{
+    text-align: center;
+    padding-top: 0.2rem;
+}
+.box {
+padding: 1rem 1rem;
+}
+}
+
+@media(max-width: 450px)
+{
+    #boxes{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 2rem 5rem 0.5rem 5rem;
+    }
+    h2{
+    font-size: 2.5rem;
+}
+    .createbeatbutton a {
+    font-size: 1.7rem;
+}
+}
+/* GRADIENT ANIMATION ON HOVER FOR LATER
+@keyframes movingGradient{
+    0% {
+    		background-position: 0% 50%;
+    	}
+    	50% {
+    		background-position: 100% 50%;
+    	}
+    	100% {
+    		background-position: 0% 50%;
+    	}
+
+}*/
