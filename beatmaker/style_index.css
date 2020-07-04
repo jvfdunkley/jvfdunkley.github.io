@@ -49,7 +49,6 @@ padding-bottom: 1rem;
 
 #title
 {
-    /*color: var(--gradient);*/
     font-family: 'Chewy', cursive;
     font-size: 2rem;
     background: var(--gradient);
@@ -88,11 +87,6 @@ margin-top: 3.125rem;
     border-image-slice: 1;
     border-width: 0.3125rem;
     border-image-source:var(--gradient);
-
-    /* MIGHT ADD GRADIENT ANIMATION AS A EXTRA THING LATER
-    animation-name: movingGradient;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;*/
 }
 @media(max-width: 1230px)
 {
@@ -121,16 +115,3 @@ padding: 1rem 1rem;
     font-size: 1.7rem;
 }
 }
-/* GRADIENT ANIMATION ON HOVER FOR LATER
-@keyframes movingGradient{
-    0% {
-    		background-position: 0% 50%;
-    	}
-    	50% {
-    		background-position: 100% 50%;
-    	}
-    	100% {
-    		background-position: 0% 50%;
-    	}
-
-}*/
